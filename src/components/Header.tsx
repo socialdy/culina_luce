@@ -8,21 +8,21 @@ export const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <header className="fixed w-full top-0 z-50 bg-white backdrop-blur-sm border-b border-gray-100">
+    <header className="fixed w-full top-0 z-50 bg-black backdrop-blur-sm border-black">
       <div className="container mx-auto px-6 md:px-12">
         <nav className="flex items-center justify-between h-20">
           {/* Logo Section */}
           <div className="flex items-center space-x-2">
   <a href="/" className="h-6 sm:h-8">
     <img
-      src="/images/mgs_logo.png"
-      alt="MGS Logo"
+      src="/images/Beeck-Kuechen-Logo.png"
+      alt="Beeck Küchen Logo"
       className="h-full m-0 w-auto"
     />
   </a>
   <a href="https://kuechenstudio-bergheim.at" className="h-11 sm:h-14">
     <img
-      src="/images/me_logo_black.png"
+      src="/images/me_logo.png"
       alt="Küchenstudio Bergheim Logo"
       className="h-full"
     />
@@ -38,10 +38,10 @@ export const Header = () => {
               Produkte
             </a>
             <a
-              href="#ueber-mgstaps"
+              href="#ueber-beeck-kuechen"
               className=""
             >
-              Über MGSTaps
+              Über Beeck Küchen
             </a>
             <a
               href="/#referenzen"
@@ -49,26 +49,25 @@ export const Header = () => {
             >
               Referenzen
             </a>
-            <a
-              href="/#beratung"
-              className=""
-            >
-             Jetzt Beratung anfordern
-            </a>
+            <a href="/#beratung">
+            <Button className="bg-[#ef7d00] hover:bg-[#ef7d00] text-black px-6 py-6 rounded-full">
+              Termin vereinbaren
+            </Button>
+          </a>
           </div>
 
           {/* Hamburger Menu Icon */}
           <div className="lg:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text[#2c2c2e] hover:[#2c2c2e] focus:outline-none"
+              className="text[#ffffffbf] hover:[#ffffffbf] focus:outline-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="#2c2c2e"
+                stroke="#ffffffbf"
               >
                 <path
                   strokeLinecap="round"
@@ -83,35 +82,34 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white text-gray-700 border-t border-gray-100 shadow-md mobile">
+          <div className="lg:hidden bg-black text-gray-700 border-t border-black shadow-md mobile">
             <div className="flex flex-col items-start gap-4 py-4 pl-6">
               <a
                 href="/#produkte"
-                className="hover:text-gray-900 hover:underline transition-colors"
+                className=""
                 onClick={toggleMobileMenu}
               >
                 Produkte
               </a>
               <a
-                href="/#ueber-mgstaps"
-                className="hover:text-gray-900 hover:underline transition-colors"
+                href="/#ueber-beeck-kuechen"
+                className=""
                 onClick={toggleMobileMenu}
               >
-                Über MGSTaps
+                Über Beeck Küchen
               </a>
               <a
                 href="/#referenzen"
-                className="hover:text-gray-900 hover:underline transition-colors"
+                className=""
                 onClick={toggleMobileMenu}
               >
                 Referenzen
               </a>
-              <a
-              href="/#beratung"
-              className=""
-            >
-             Jetzt Beratung anfordern
-            </a>
+              <a href="/#beratung">
+            <Button className="bg-[#ef7d00] hover:bg-[#ef7d00] text-black px-6 py-6 rounded-full">
+              Termin vereinbaren
+            </Button>
+          </a>
             </div>
           </div>
         )}

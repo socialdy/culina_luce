@@ -6,89 +6,156 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const products = [
   {
     id: 1,
-    name: "Nemo RH",
-    image: "/images/nemo_rh.jpg",
-    description: "Schlichte Armatur mit elegantem Design, perfekt für moderne Küchen und Bars. Einfache Wasserfluss- und Temperaturregulierung mit einer Hand.",
+    name: "LINUX powder pistacchio olive",
+    image: "/images/linux_pistacchio_olive.jpg",
   },
   {
     id: 2,
-    name: "F2 SCS",
-    image: "/images/f2_scs.jpg",
-    description: "Zweiloch-Armatur aus Edelstahl AISI316L in Marinequalität. 100 % bleifrei, vollständig recycelbar. Flexibel platzierbar und handpoliert.",
+    name: "THIN",
+    image: "/images/thin.jpg",
   },
   {
     id: 3,
-    name: "Spin SQ",
-    image: "/images/spin_sq.jpg",
-    description: "Eleganter Küchenmischer aus hochwertigem Edelstahl. Schwenkbarer Auslauf, ideal für kleine Spülen.",
+    name: "TREND B mammut eiche",
+    image: "/images/trend_b_mammut_eiche.jpg",
   },
   {
     id: 4,
-    name: "Spin PF",
-    image: "/images/spin_pf.jpg",
-    description: "Kaltwasser-Wandhahn aus Edelstahl AISI316L, mit doppeltem schwenkbarem Auslauf. Unterputzinstallation möglich.",
+    name: "TREND B charcoal",
+    image: "/images/trend_b_charcoal.jpg",
   },
   {
     id: 5,
-    name: "Vela LD",
-    image: "/images/vela_ld.jpg",
-    description: "Semiprofessionelle Armatur mit Handbrause. Ideal für große Spülbecken und Kücheninseln. Umstellbar von normal auf Spray.",
+    name: "TREND B nordeiche",
+    image: "/images/trend_b_nordeiche.jpg",
   },
   {
     id: 6,
-    name: "MB297",
-    image: "/images/mb297.jpg",
-    description: "Zweiloch-Wandarmatur mit elegantem Auslauf aus Edelstahl AISI316L. Handpoliert für matte oder polierte Oberflächen.",
+    name: "TREND B vintage oak",
+    image: "/images/trend_b_vintage_oak.jpg",
   },
   {
     id: 7,
-    name: "MB516",
-    image: "/images/mb516.jpg",
-    description: "Bodenmontierter Badewannenfüller aus Edelstahl AISI316L, handpoliert auf mattes oder glänzendes Finish.",
+    name: "TREND stahlgrau",
+    image: "/images/trend_stahlgrau.jpg",
   },
   {
     id: 8,
-    name: "SO608",
-    image: "/images/so608.jpg",
-    description: "Großer, quadratischer Duschkopf aus hochwertigem Edelstahl für ein Regenerlebnis. Erhältlich in mattem oder poliertem Finish.",
+    name: "VAL S zementschwarz grande",
+    image: "/images/val_s_zementschwarz_grande.jpg",
   },
   {
     id: 9,
-    name: "SO614",
-    image: "/images/so614.jpg",
-    description: "Multifunktions-Deckenduschkopf mit drei Wasserstrahlarten und Chromotherapie-Funktion für ein Spa-Erlebnis zu Hause.",
+    name: "IDEAL XT platingrau",
+    image: "/images/ideal_xt_platingrau.jpg",
   },
   {
     id: 10,
-    name: "AC918",
-    image: "/images/ac918.jpg",
-    description: "Spülplatte kompatibel mit Geberit Sigma 8 cm und 12 cm Spülsystemen. Handpoliert mit mattem oder glänzendem Edelstahl-Finish.",
+    name: "IDEAL XT / METALL potoro / champagner gold",
+    image: "/images/ideal_xt_metal_potoro_champagner_gold.jpg",
   },
   {
     id: 11,
-    name: "MB441",
-    image: "/images/mb441.jpg",
-    description: "Thermostatisches Duschventil aus Edelstahl AISI316L mit Zwei-Wege-Mengenregelung. Erhältlich in verschiedenen Oberflächen wie Black Steel und Titanium.",
+    name: "TREND / METALL umbra",
+    image: "/images/trend_metal_umbra.jpg",
   },
   {
     id: 12,
-    name: "E455 – PE456",
-    image: "/images/e455_pe456.jpg",
-    description: "Horizontales thermostatisches Duschventil mit Handbrausehalterung. Ermöglicht die Steuerung von Handbrause und zusätzlichem Wasserauslass.",
+    name: "METALL kupfer",
+    image: "/images/metal_kupfer.jpg",
   },
   {
     id: 13,
-    name: "ER516",
-    image: "/images/er516.jpg",
-    description: "Bodenmontierter Badewannenfüller mit Handbrause. Aus Edelstahl AISI316L, handpoliert auf mattes oder glänzendes Finish.",
+    name: "METALL kupfer",
+    image: "/images/metal_kupfer_2.jpg",
   },
   {
     id: 14,
-    name: "AC978",
-    image: "/images/ac978.jpg",
-    description: "Badewannenauslauf für Deckmontage aus Edelstahl. Maximiert den Wasserfluss zum Befüllen der Badewanne. Erhältlich in mattem oder poliertem Edelstahl.",
+    name: "COLORLINE AP ultimate grey",
+    image: "/images/colorline_ap_ultimate_grey.jpg",
+  },
+  {
+    id: 15,
+    name: "COLORLINE AP weiß + oceanblau",
+    image: "/images/colorline_ap_weiss_oceanblau.jpg",
+  },
+  {
+    id: 16,
+    name: "COLORLINE L weiß + curry",
+    image: "/images/colorline_l_weiss_curry.jpg",
+  },
+  {
+    id: 17,
+    name: "COLORLINE L midnight blue",
+    image: "/images/colorline_l_midnight_blue.jpg",
+  },
+  {
+    id: 18,
+    name: "COLORLINE MC pacific lemon",
+    image: "/images/colorline_mc_pacific_lemon.jpg",
+  },
+  {
+    id: 19,
+    name: "COLORLINE AP (S)",
+    image: "/images/colorline_ap_s.jpg",
+  },
+  {
+    id: 20,
+    name: "COLORLINE hgl rund",
+    image: "/images/colorline_hgl_rund.jpg",
+  },
+  {
+    id: 21,
+    name: "COLORLINE BG cream / eiche provence",
+    image: "/images/colorline_bg_cream_eiche_provence.jpg",
+  },
+  {
+    id: 22,
+    name: "MIRO SWOOP",
+    image: "/images/miro_swoop.jpg",
+  },
+  {
+    id: 23,
+    name: "FINESS W nussbaum vinterio",
+    image: "/images/finess_w_nussbaum_vinterio.jpg",
+  },
+  {
+    id: 24,
+    name: "BUTLERSPANTRY L",
+    image: "/images/butlerspantry_l.jpg",
+  },
+  {
+    id: 25,
+    name: "VENTO pastell sand astig kaschmir",
+    image: "/images/vento_pastell_sand_astig_kaschmir.jpg",
+  },
+  {
+    id: 26,
+    name: "WINDSOR kaschmir",
+    image: "/images/windsor_kaschmir.jpg",
+  },
+  {
+    id: 27,
+    name: "WINDSOR beachwood astig",
+    image: "/images/windsor_beachwood_astig.jpg",
+  },
+  {
+    id: 28,
+    name: "CERAMIC PUR iron grey",
+    image: "/images/ceramic_pur_iron_grey.jpg",
+  },
+  {
+    id: 29,
+    name: "STONE PUR",
+    image: "/images/stone_pur.jpg",
+  },
+  {
+    id: 30,
+    name: "SIGNUM LG",
+    image: "/images/signum_lg.jpg",
   },
 ];
+
 
 
 
@@ -111,24 +178,23 @@ export const ProductSlider = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="produkte">
+    <section className="py-20 bg-black" id="produkte">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-5xl font-light text-center text-[#61756a] mb-12 uppercase">Produkte</h2>
+        <h2 className=" text-center mb-12">Produkte</h2>
         <div className="relative">
           <div className="flex gap-4 md:gap-8">
             {products
               .slice(currentIndex, currentIndex + slidesPerView)
               .map((product) => (
                 <div key={product.id} className="flex-1 animate-fade-in">
-                  <div className="bg-white shadow-lg">
+                  <div className="bg-black shadow-lg">
                     <img
                       src={product.image}
                       alt={product.name}
                       className=""
                     />
                     <div className="p-6 md:p-8 text-center">
-                      <h3 className="text-2xl uppercase text-[#2c2c2e] font-[500] md:text-3xl mb-2">{product.name}</h3>
-                      <p className="text[#2c2c2e] mb-4">{product.description}</p>
+                      <h3 className="text-2xl text-white  md:text-2xl mb-2">{product.name}</h3>
                     </div>
                   </div>
                 </div>
@@ -136,17 +202,17 @@ export const ProductSlider = () => {
           </div>
           <button
             onClick={prev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white p-2 shadow-lg"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-[#ef7d00]  p-2 shadow-lg"
             aria-label="Previous slide"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-6 h-6 text-black" />
           </button>
           <button
             onClick={next}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white p-2 shadow-lg"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-[#ef7d00] p-2 shadow-lg"
             aria-label="Next slide"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-6 h-6 text-black" />
           </button>
         </div>
       </div>

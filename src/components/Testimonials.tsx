@@ -10,66 +10,63 @@ export const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Stefan Müller",
-      role: "Privatkunde",
-      quote: "Die Armatur 'Spin SQ' hat unsere Küche perfekt ergänzt. Der schwenkbare Auslauf ist nicht nur praktisch, sondern sieht auch noch richtig edel aus. Sehr zufrieden mit dem Design und der Funktionalität!",
+      name: "Eva Sommer",
+      role: "Architektin",
+      quote: "Ich habe die TREND B nordeiche Küche für ein Projekt in einem modernen Neubau verwendet. Die Holzstruktur und das dezente Design passen perfekt zu unserem minimalistischen Ansatz. Die Küche sieht nicht nur hochwertig aus, sondern fühlt sich auch so an. Absolut empfehlenswert!",
     },
     {
       id: 2,
-      name: "Laura Schmitt",
-      role: "Immobilienentwicklerin",
-      quote: "'F2 SCS' Armaturen haben wir in unseren neuen Luxuswohnungen verbaut. Sie passen perfekt zum modernen Design und sind dabei noch extrem langlebig und umweltfreundlich – absolut empfehlenswert.",
+      name: "Paul Müller",
+      role: "Privatkunde",
+      quote: "TREND B charcoal war die perfekte Wahl für unsere Neubau-Küche. Der matte Charcoal-Look ist unglaublich elegant und pflegeleicht. Wir sind super zufrieden mit der Qualität und Funktionalität der Möbel – unsere Küche sieht jeden Tag wie neu aus!",
     },
     {
       id: 3,
-      name: "Janine Becker",
-      role: "Innenarchitektin",
-      quote: "Die Edelstahlarmaturen von 'Nemo RH' bringen eine elegante, aber schlichte Ästhetik in jedes Badezimmer. Besonders schätze ich die hohe Funktionalität und die einfache Handhabung im Alltag.",
+      name: "Anna Roth",
+      role: "Inneneinrichterin",
+      quote: "Für eines meiner letzten Projekte entschied ich mich für die LINUX. Der sanfte Grünton bringt eine beruhigende Atmosphäre in die Küche. Die Verarbeitung ist top und auch nach einigen Monaten täglicher Nutzung zeigt die Oberfläche keine Abnutzungserscheinungen.",
     },
     {
       id: 4,
-      name: "Maximilian Schwarz",
-      role: "Restaurantbesitzer",
-      quote: "Wir haben in unserem Restaurant 'Vela LD' Armaturen installiert, und die Handbrause hat sich als äußerst praktisch erwiesen. Der Umstellmechanismus zwischen normalem Wasserfluss und Spray ist einfach genial für die Küche.",
+      name: "Lukas Bauer",
+      role: "Küchenliebhaber",
+      quote: "Ich bin total begeistert von meiner neuen WINDSOR Küche. Die Kombination aus Holz und dem modernen, offenen Design gibt der Küche eine warme und einladende Atmosphäre. Absolut wertig verarbeitet, und das Kochen macht noch mehr Spaß.",
     },
   ];
 
   return (
-<section className="py-20 bg-[#61756a] text-white" id="referenzen">
-  <div className="container max-w-6xl mx-auto px-4">
-  <h2 className="text-5xl font-light  text-white text-center mb-12 uppercase">Referenzen</h2>
-    <Carousel
-      opts={{
-        align: "start",
-        loop: true,
-      }}
-      className="w-full max-w-5xl mx-auto relative"
-    >
-      <CarouselContent className="-ml-2 md:-ml-4">
-        {testimonials.map((testimonial) => (
-          <CarouselItem
-            key={testimonial.id}
-            className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
-          >
-            <div className="bg-white/10 p-8 h-full animate-fade-in">
-              <div className="flex flex-col h-full justify-between">
-                <p className="text-lg mb-8 italic">"{testimonial.quote}"</p>
-                <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-gray-200">{testimonial.role}</p>
+    <section className="py-20 bg-black text-white" id="referenzen">
+      <div className="container max-w-6xl mx-auto px-4">
+        <h2 className="text-white text-center mb-12 ">Referenzen</h2>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-5xl mx-auto relative"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {testimonials.map((testimonial) => (
+              <CarouselItem
+                key={testimonial.id}
+                className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
+              >
+                <div className="bg-white/10 p-8 h-full animate-fade-in">
+                  <div className="flex flex-col h-full justify-between">
+                    <p className="text-lg mb-8 italic">"{testimonial.quote}"</p>
+                    <div>
+                      <p className="font-bold">{testimonial.name}</p>
+                      <p className="font-light">{testimonial.role}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      {/* Pfeile werden auf Mobile und Tablet ausgeblendet */}
-      <CarouselPrevious className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -left-12 z-10 hover:bg-white/20 text-black" />
-      <CarouselNext className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -right-12 z-10 hover:bg-white/20 text-black" />
-    </Carousel>
-  </div>
-</section>
-
-
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -left-12 z-10 hover:bg-white/80 text-black" />
+          <CarouselNext className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -right-12 z-10 hover:bg-white/80 text-black" />
+        </Carousel>
+      </div>
+    </section>
   );
 };

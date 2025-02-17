@@ -3,41 +3,38 @@
 @tailwind utilities;
 
 
-  /** Für Bon Vivant Family **/
-  @font-face {
-      font-family: "Bon Vivant Family";
-      src: url("public/fonts/BonVivantSerifBold.ttf");
-      font-weight: normal;
-  }
+body, p, button {
+  font-family: 'Barlow', sans-serif;
+  color: #dee2e6;
+  font-weight: 400;
+  line-height: 1.5;
 
-  /* Karla für Body */
-  body {
-      font-family: 'Karla', sans-serif;
-  }
+}
 
-  nav, .mobile{
-    font-family: 'Rubik', sans-serif;
-    font-size: 12px !important;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-transform: uppercase;
-    padding: 0 15px;
-  }
+h1 {
+  font-size: 3rem; /* Fibonacci-Zahl 3 */
+}
 
-  /* Rubik für Navigation */
-  nav, h3 {
-      font-family: 'Rubik', sans-serif;
-  }
+h2 {
+  font-size: 2.5rem; /* Fibonacci-Zahl 2 */
+}
 
-  /* Bon Vivant für Überschriften */
-  h1, h2, h4, h5, h6 {
-      font-family: 'Bon Vivant Family', serif !important;
-  }
+h3 {
+  font-size: 2rem; /* Fibonacci-Zahl 2 */
+}
 
-  /* Weitere Stile für Buttons und Texte */
-  btn{
-      font-family: 'Karla', sans-serif;
-  }
+h4 {
+  font-size: 1.5rem; /* Fibonacci-Zahl 1 */
+}
+
+ a{
+  color: #ffffff;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #ef7d00;
+}
 
 
 @layer base {
