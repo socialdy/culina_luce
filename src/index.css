@@ -3,38 +3,87 @@
 @tailwind utilities;
 
 
-body, p, button {
-  font-family: 'Barlow', sans-serif;
-  color: #dee2e6;
-  font-weight: 400;
-  line-height: 1.5;
+
+/* Standard h1-Stil */
+/* Standard h1-Stil */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 89px; /* Startgröße für Desktop */
+  line-height: 64pt; /* Zeilenhöhe entsprechend der Schriftgröße */
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 63px; /* Kleinere Schriftgröße für größere Tablets */
+    line-height:1; /* Etwas größere Zeilenhöhe für Tablets */
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 55px; /* Noch kleinere Schriftgröße für kleinere Tablets */
+    line-height: 1; /* Größere Zeilenhöhe für bessere Lesbarkeit */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 45px; /* Kleinere Schriftgröße für Tablets */
+    line-height: 1; /* Größere Zeilenhöhe für bessere Lesbarkeit */
+  }
+
 
 }
 
-h1 {
-  font-size: 3rem; /* Fibonacci-Zahl 3 */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px; /* Kleinste Schriftgröße für Handys */
+    line-height: 1.1; /* Größte Zeilenhöhe für kleine Geräte */
+  }
 }
 
 h2 {
-  font-size: 2.5rem; /* Fibonacci-Zahl 2 */
+  font-size: 78px;
+  line-height: 86px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
 }
 
-h3 {
-  font-size: 2rem; /* Fibonacci-Zahl 2 */
+/* Kleinere Schriftgröße und Zeilenhöhe für Tablets und mobile Geräte */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 35px; /* Kleinere Schriftgröße für Tablets */
+    line-height: 1; /* Kleinere Zeilenhöhe für Tablets */
+  }
 }
 
-h4 {
-  font-size: 1.5rem; /* Fibonacci-Zahl 1 */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 28px; /* Noch kleinere Schriftgröße für Handys */
+    line-height: 1; /* Größere Zeilenhöhe für kleine Geräte */
+  }
 }
 
- a{
-  color: #ffffff;
+h3{
+  font-size: 24px;
+  line-height: 31pt;
+  font-weight: 300;
 }
 
-a:hover{
-  text-decoration: underline;
-  color: #ef7d00;
+nav .mobile{
+  font-weight: 300 !important;
 }
+
+
 
 
 @layer base {

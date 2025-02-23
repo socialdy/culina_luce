@@ -1,11 +1,11 @@
-import { Check } from "lucide-react"; 
+import { Check } from "lucide-react";
 
 export const AboutSection = () => {
   const benefits = [
-    "Maßgeschneiderte Küchenlösungen, die perfekt auf die Bedürfnisse und den Lebensstil der Kunden abgestimmt sind.",
-    "Verwendung hochwertiger, nachhaltiger Materialien für langlebige und umweltfreundliche Küchen.",
-    "Familiengeführtes Unternehmen mit jahrzehntelanger Erfahrung und Expertise in der Küchenplanung und -produktion.",
-    "Kombination aus funktionaler Exzellenz und ästhetischem Design für Küchen, die sowohl praktisch als auch ein echter Blickfang sind.",
+    "Hochwertige Glasrückwände und LED-Lichtfelder für individuelle Designs.",
+    "Maßgeschneiderte Lösungen für private und gewerbliche Kunden.",
+    "Über 15 Jahre Erfahrung in der Fertigung von Glas- und Lichtlösungen.",
+    "Handgefertigte Unikate mit modernster LED-Technologie.",
   ];
 
   return (
@@ -16,17 +16,19 @@ export const AboutSection = () => {
             <iframe
               width="100%"
               height="400"
-              src="https://www.youtube.com/embed/_lp6k-x_Uxg"
-              title="BEECK Küchen Video"
+              src="https://www.youtube.com/embed/szMgrPDblMw"
+              title="CULINA LUCE - Hochwertige Glasrückwände & LED-Lichtfelder"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
           <div className="animate-fade-in">
-            <h2 className="text-white mb-12">Warum BEECK Küchen wählen?</h2>
+            <h2 className="text-white mb-12">Warum CULINA LUCE?</h2>
             <p className="text-white mb-8">
-              BEECK Küchen kombiniert jahrzehntelange Handwerkskunst mit innovativen Lösungen, um maßgeschneiderte Küchen zu kreieren, die sowohl funktional als auch ästhetisch ansprechend sind.
+              CULINA LUCE steht für modernes Design, individuelle Lösungen und
+              höchste Qualität. Unsere Glasrückwände und LED-Lichtfelder
+              bringen Licht in Ihr Leben und setzen stilvolle Akzente.
             </p>
 
             <ul className="space-y-4">
